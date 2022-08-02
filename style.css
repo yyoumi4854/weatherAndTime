@@ -1,0 +1,47 @@
+/* reset */
+*{box-sizing: border-box; margin: 0; padding: 0;}
+body{font-family: 'Noto Sans KR', sans-serif; line-height: 1;}
+li{list-style: none;}
+
+body{display: flex; justify-content: center; align-items: center; height: 100vh;}
+.container{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 360px; height: 640px;}
+.top, .middle, .bottom{text-align: center;}
+
+/* top */
+.top p:first-child{font-weight: 500; font-size: 20px;}
+.top p:last-child{font-size: 14px; margin-top: 8px;}
+
+/* middle */
+.middle{margin-top: 80px;}
+.middle .main_icon{margin: 0 auto; width: 72px; height: 72px;}
+.middle p:first-of-type{font-weight: 700; font-size: 64px; margin: 24px 0 16px 0;}
+
+.line{margin-top: 40px; width: 32px; height: 1px;}
+/* bottom */
+.bottom{display: flex; align-items: center; margin-top: 48px;}
+.bottom li{width: 100px;}
+.bottom li svg{height: 32px;}
+.bottom li p:first-of-type{margin-top: 12px;}
+.bottom li p:last-of-type{margin-top: 4px; font-weight: 300; font-size: 14px;}
+.bottom span{display: block; margin: 0 20px; width: 1px; height: 32px;}
+
+/* 낮 */
+.day{background: #DBE2EA; color: #2B323C;}
+
+.day .line{background: #C2C5CC;}
+
+.day svg{fill: #5D6169;}
+.day .bottom li:first-child::after{background: #C2C5CC;}
+.day .bottom li p:last-of-type{color: #5D6169;}
+.day .bottom span{background: #C2C5CC;}
+
+
+/* 밤 */
+.night{background: #2B323C; color: #DBE2EA;}
+
+.night .line{background: #979EA6;}
+
+.night svg{fill: #A3AAB2;}
+.night .bottom li:first-child::after{background: #979EA6;}
+.night .bottom li p:last-of-type{color: #A3AAB2;}
+.night .bottom span{background: #979EA6;}
